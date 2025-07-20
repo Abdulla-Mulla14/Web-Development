@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+    <style>
+        .carousel-slide {
+            width: 300px; /* or any fixed width you prefer */
+            margin: auto;
+        }
+
+        .carousel-slide .carousel-inner {
+            width: 100%;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 200px; /* Set a consistent height */
+            object-fit: cover; /* Or use 'contain' to fit entire image */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="carouselExample" class="carousel-slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/30695581/pexels-photo-30695581.jpeg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/340152/pexels-photo-340152.jpeg" class="d-block w-100" alt="Descriptive text">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/4974916/pexels-photo-4974916.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+    </div>
+</body>
+</html>
