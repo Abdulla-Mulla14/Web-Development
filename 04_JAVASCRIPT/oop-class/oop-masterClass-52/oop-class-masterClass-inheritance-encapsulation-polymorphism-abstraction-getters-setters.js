@@ -217,3 +217,31 @@ class Calculator{
 // let miniCal = new Calculator()
 // console.log(miniCal.add(2, 3));   // yeh two line nahi chalega kyunki: Nobody should be using it by creating an object
 console.log(Calculator.add(2, 3));
+
+// ********************************************************************************* //
+// getters and setters
+class User{
+    constructor(email, password) {
+        this.email = email;
+        this.password = password
+    }
+
+    get email() {
+        return this._email.toUpperCase()
+    }
+
+    set email(value) {
+        this._email = value
+    }
+
+    get password() {
+        return this._password.toUpperCase()
+    }
+
+    set password(value) {
+        this._password = value
+    }
+}
+const hitesh = new User("Abdulla", "123")
+console.log(hitesh.password);
+console.log(hitesh.email);
